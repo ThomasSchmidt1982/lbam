@@ -1,0 +1,54 @@
+root{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.73);
+    align-items: center;
+    place-items: center;
+    max-height: 10vh;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+body{
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+content{
+    max-height: 80vh;
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url("../img/background.png");
+    background-size: cover;
+
+}
+
+footer{
+    max-height: 10vh;
+    align-items: center;
+    place-items: center;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    background-color: #ffffff;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.footer-icons{
+    height: 45%;
+}
+.nav-icons{
+    height: 100%;
+}
+#logo{
+    height: 75%;
+}
+#entreprise{
+    grid-column-start: 2;
+    font-size: 1.5rem;
+}
