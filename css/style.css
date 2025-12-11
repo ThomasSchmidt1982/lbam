@@ -17,7 +17,7 @@ body{
 nav{
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.73);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     align-items: center;
     place-items: center;
     display: grid;
@@ -61,17 +61,19 @@ main{
     place-items: center;
 }
 footer{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
     align-items: center;
     place-items: center;
     display: grid;
-    grid-template-columns: 10vw 60vw 10vw 10vw 10vw;
+    grid-template-columns: 12vw 52vw 12vw 12vw 12vw;
     background-color: #ffffff;
     grid-row-start: 3;
     grid-row-end: 4;
+    object-fit: contain;
 }
 .footer-icons{
-    padding: 10px;
-    height: 45%;
+    padding: 8px;
+    height: auto;
     font-size: 1.5rem;
 }
 
