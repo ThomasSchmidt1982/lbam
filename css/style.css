@@ -81,7 +81,8 @@ footer{
 }
 .footer-icons{
     padding: 8px;
-    height: auto;
+    height: 40px;
+    width: auto;
     font-size: 1.5rem;
 }
 
