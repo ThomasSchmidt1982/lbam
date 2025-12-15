@@ -1,99 +1,136 @@
-:root{
-    font-family: 'Inria Sans', sans-serif ;
+:root {
+    font-family: 'Inria Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     display: grid;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 10vh 1fr 10vh;
     height: 100vh;
     margin: 0;
     padding: 0;
 }
-#nav{
-    margin: 0;
-    padding: 0;
+@media screen and (min-width:768px) {
+    body {
+        grid-template-rows: 100px 1fr 80px;
+    }
 }
-nav{
+
+
+nav {
     margin: 0;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    align-items: center;
     place-items: center;
+    align-items: center;
     display: grid;
     grid-template-columns: 15vw 70vw 15vw;
     grid-row-start: 1;
     grid-row-end: 2;
+    background-color: white;
 }
-nav svg {
-    height: auto;
-    width: auto;
-    object-fit: contain;
+@media (min-width: 500px) {
+    nav svg {
+        height: 75px;
+        width: auto;
+    }
 }
-#logo{
+#logo {
     grid-column-start: 1;
     grid-column-end: 2;
     height: auto;
     padding: 10px;
 }
-#entreprise{
+@media (min-width: 500px) {
+    #logo {
+        height: 75px;
+        width: auto;
+    }
+}
+
+#entreprise {
     grid-column-start: 2;
     grid-column-end: 3;
-    font-size: 6vw ;
+    font-size: 6vw;
     text-overflow-ellipsis: 5;
     padding: 10px;
 }
-.nav-icons{
+@media screen and (min-width:768px) {
+    #entreprise {
+        font-size: 4vw;
+    }
+}
+.nav-icons {
     grid-column-start: 3;
     grid-column-end: 4;
     height: auto;
     padding: 10px;
 }
-main{
-    max-height: 80vh;
+
+@media (min-width: 500px) {
+    .nav-icons {
+        height: 75px;
+        width: auto;
+    }
+}
+
+main {
     display: grid;
     grid-row-start: 2;
     grid-row-end: 3;
     background-image: url("../img/background.png");
     background-size: cover;
     grid-template-rows: 1fr 1fr;
-    align-content: center;
+    align-content: start;
     place-items: center;
+    overflow-y: auto; /* Active le scroll vertical */
 }
-footer{
+
+footer {
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     align-items: center;
     place-items: center;
     display: grid;
     grid-template-columns: 12vw 52vw 12vw 12vw 12vw;
-    background-color: #ffffff;
     grid-row-start: 3;
     grid-row-end: 4;
     object-fit: contain;
+    background-color: white;
 }
-.footer-icons{
+
+.footer-icons {
     padding: 8px;
     height: 40px;
     width: auto;
     font-size: 1.5rem;
 }
 
-#claim{
+#claim {
+    grid-row-start: 1;
+    grid-row-end: 2;
     text-align: center;
     padding: 5%;
     font-size: 8vw;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.82);
 }
-#annonce{
+@media screen and (min-width:768px) {
+    #claim {
+        font-size: 6vw;
+    }
+}
+#annonce {
     border-radius: 15px;
     padding: 5%;
     max-height: 60%;
@@ -105,6 +142,12 @@ footer{
     transform: skew(-10deg);
     text-overflow: fade;
 }
-a:has(#phone){
+@media screen and (min-width:768px) {
+    #annonce {
+        font-size: 3vw;
+    }
+}
+
+a:has(#phone) {
     justify-self: start;
 }
