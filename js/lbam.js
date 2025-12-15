@@ -3,9 +3,9 @@ fetch('./html/nav.html')
     .then(res => res.text())
     .then(html => {
         document.getElementById('nav').innerHTML = html;
-        const burger = document.getElementById('burger');
-        if (burger) {
-            burger.addEventListener('click', showResponsiveMenu);
+        const link = document.getElementById('link');
+        if (link) {
+            link.addEventListener('click', showResponsiveMenu);
         }
     } );
 

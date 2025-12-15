@@ -151,7 +151,7 @@ a:has(#phone) {
 
 #burger {
     width: 30px;
-    height: 2px;
+    height: 3px;
     background: black;
     display: inline-block;
     position: relative;
@@ -160,7 +160,7 @@ a:has(#phone) {
 #burger::after {
     content:'';
     width:30px;
-    height: 2px;
+    height: 3px;
     background: black;
     display: inline-block;
     position: absolute;
@@ -168,10 +168,10 @@ a:has(#phone) {
     transition: all 0.3s ease;
 }
 #burger::before {
-    top: -7px;
+    top: -8px;
 }
 #burger::after {
-    top: 7px;
+    top: 8px;
 }
 
 #burger.open {
@@ -207,7 +207,7 @@ a:has(#phone) {
 
 #responsive_menu.open {
     transform: translateY(0); /* Descend */
-    opacity: 1; /* Visible */
+    opacity: .95 ; /* Visible */
     pointer-events: auto; /* Cliquable */
 }
 
