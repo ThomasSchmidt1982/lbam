@@ -14,17 +14,23 @@ fetch('./html/footer.html')
     .then(html => document.getElementById('footer').innerHTML = html )
 
 
-function showResponsiveMenu(){
+function showResponsiveMenu() {
     var menu = document.getElementById("responsive_menu");
     var icon = document.getElementById("burger");
 
-    if (menu.className === "") {
-        menu.className = "open";
-        icon.className = "open";
+    if (!menu || !icon) {
+        console.error("Éléments introuvables");
+        return;
+    }
+
+    // Toggle la classe 'open'
+    menu.classList.toggle('open');
+    icon.classList.toggle('open');
+
+    // Gère le scroll du body
+    if (menu.classList.contains('open')) {
         document.body.style.overflowY = "hidden";
     } else {
-        menu.className = "";
-        icon.className = "";
         document.body.style.overflowY = "";
     }
 }
