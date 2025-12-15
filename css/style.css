@@ -44,12 +44,6 @@ nav {
     grid-row-end: 2;
     background-color: white;
 }
-@media (min-width: 500px) {
-    nav svg {
-        height: 75px;
-        width: auto;
-    }
-}
 #logo {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -58,11 +52,10 @@ nav {
 }
 @media (min-width: 500px) {
     #logo {
-        height: 75px;
-        width: auto;
+        height: 55px;
+        padding:5px;
     }
 }
-
 #entreprise {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -70,7 +63,7 @@ nav {
     text-overflow-ellipsis: 5;
     padding: 10px;
 }
-@media screen and (min-width:768px) {
+@media (min-width:500px) {
     #entreprise {
         font-size: 4vw;
     }
@@ -81,10 +74,9 @@ nav {
     height: auto;
     padding: 10px;
 }
-
 @media (min-width: 500px) {
     .nav-icons {
-        height: 75px;
+        height: 55px;
         width: auto;
     }
 }
