@@ -1,5 +1,5 @@
 
-fetch('/lbam/html/_nav.html')
+fetch('/html/_nav.html')
     .then(res => res.text())
     .then(html => {
         document.getElementById('nav').innerHTML = html;
@@ -9,7 +9,7 @@ fetch('/lbam/html/_nav.html')
         }
     } );
 
-fetch('/lbam/html/_footer.html')
+fetch('/html/_footer.html')
     .then(res => res.text())
     .then(html => document.getElementById('footer').innerHTML = html )
 
