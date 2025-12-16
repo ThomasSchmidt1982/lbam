@@ -64,9 +64,9 @@ nav {
     text-overflow-ellipsis: 5;
     padding: 10px;
 }
-@media (min-width:500px) {
+@media (min-width:748px) {
     #entreprise {
-        font-size: 4vw;
+        font-size: 50px;
     }
 }
 .nav-icons {
@@ -113,7 +113,7 @@ footer {
     font-size: 1.5rem;
 }
 
-#claim {
+#message {
     grid-row-start: 1;
     grid-row-end: 2;
     text-align: center;
@@ -123,8 +123,8 @@ footer {
     color: rgba(255, 255, 255, 0.82);
 }
 @media screen and (min-width:768px) {
-    #claim {
-        font-size: 6vw;
+    #message {
+        font-size: 30px;
     }
 }
 #annonce {
@@ -134,19 +134,23 @@ footer {
     max-width: 80%;
     grid-row-start: 2;
     grid-row-end: 3;
-    font-size: 4vw;
     background-color: rgba(255, 255, 255, 0.65);
     transform: skew(-10deg);
     text-overflow: fade;
 }
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
     #annonce {
-        font-size: 3vw;
+        font-size: 25px;
     }
 }
 
 a:has(#phone) {
     justify-self: start;
+}
+@media (min-width:768px) {
+    #phone {
+        font-size: 20px;
+    }
 }
 
 #burger {
@@ -165,13 +169,30 @@ a:has(#phone) {
     display: inline-block;
     position: absolute;
     transform-origin: center;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 #burger::before {
     top: -8px;
 }
 #burger::after {
     top: 8px;
+}
+@media (min-width:768px) {
+ #burger{
+     width: 45px;
+     height: 5px;
+ }
+    #burger::before,
+    #burger::after {
+        width:45px;
+        height: 5px;
+    }
+    #burger::before {
+        top: -12px;
+    }
+    #burger::after {
+        top: 12px;
+    }
 }
 
 #burger.open {
