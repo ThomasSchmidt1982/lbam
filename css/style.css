@@ -2,6 +2,9 @@
     font-family: 'Inria Sans', sans-serif;
     margin: 0;
     padding: 0;
+
+    --epaisseur-nav: 100px;
+
 }
 
 a {
@@ -23,7 +26,7 @@ body {
 }
 @media (min-width:768px) {
     body {
-        grid-template-rows: 100px 1fr 80px;
+        grid-template-rows: var(--epaisseur-nav) 1fr 80px;
     }
 }
 @media (orientation: landscape) {
@@ -33,6 +36,7 @@ body {
 }
 
 nav {
+    position: relative;
     margin: 0;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -64,7 +68,7 @@ nav {
     text-overflow-ellipsis: 5;
     padding: 10px;
 }
-@media (min-width:748px) {
+@media (min-width:768px) {
     #entreprise {
         font-size: 50px;
     }
@@ -154,8 +158,10 @@ a:has(#phone) {
 }
 
 #burger {
-    width: 30px;
-    height: 3px;
+    --longueur-trait:30px;
+    --epaisseur-trait:3px;
+    width: var(--longueur-trait);
+    height: var(--epaisseur-trait);
     background: black;
     display: inline-block;
     position: relative;
@@ -163,8 +169,8 @@ a:has(#phone) {
 #burger::before,
 #burger::after {
     content:'';
-    width:30px;
-    height: 3px;
+    width: var(--longueur-trait);
+    height: var(--epaisseur-trait);
     background: black;
     display: inline-block;
     position: absolute;
@@ -179,19 +185,19 @@ a:has(#phone) {
 }
 @media (min-width:768px) {
  #burger{
-     width: 45px;
-     height: 5px;
+     width: calc(var(--longueur-trait)*1.5);
+     height: calc(var(--epaisseur-trait)*1.5);
  }
     #burger::before,
     #burger::after {
-        width:45px;
-        height: 5px;
+        width: calc(var(--longueur-trait)*1.5);
+        height: calc(var(--epaisseur-trait)*1.5);
     }
     #burger::before {
-        top: -12px;
+        top: -15px;
     }
     #burger::after {
-        top: 12px;
+        top: 15px;
     }
 }
 
@@ -208,12 +214,11 @@ a:has(#phone) {
 }
 
 #responsive_menu {
-    position: fixed;
-    top: 50px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     background: white;
-    padding: 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 99;
 
@@ -223,17 +228,26 @@ a:has(#phone) {
     transform: translateY(-100%); /* Caché au-dessus */
     opacity: 0; /* Invisible */
     pointer-events: none; /* Non cliquable */
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s cubic-bezier(0.3, 0.2, 0.2, 1.25), opacity 0.5s ease;
+}
+ul {
+    padding: 0;
+    margin: 0;
 }
 
+#responsive_menu li {
+    list-style: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.45);
+
+}
 #responsive_menu.open {
-    transform: translateY(0); /* Descend */
-    opacity: .95 ; /* Visible */
-    pointer-events: auto; /* Cliquable */
+    transform: translateY(0);
+    opacity: .95 ;
+    pointer-events: auto;
 }
-
 #responsive_menu a {
     display: block;
-    padding: 10px 0;
+    padding: 10px;
+    font-size: 25px;
+    color: rgb(81, 81, 81);
 }
-C
