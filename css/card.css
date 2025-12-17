@@ -12,6 +12,7 @@ main {
     gap: 20px;
 }
 .card{
+    margin-top: 20px;
     border-radius:  5px;
     background-color: white;
     opacity: 100%;
@@ -34,8 +35,8 @@ main {
 }
 
 .card p {
-    padding: 5px;
+    padding: 0 20px 0 20px;
     text-align: center;
     color: #666;
-    font-size: 0.9em;
+    font-size: 1.15em;
 }
