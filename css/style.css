@@ -58,6 +58,7 @@ nav {
     grid-column-end: 2;
     height: auto;
     padding: 10px;
+
 }
 @media (min-width: 500px) {
     #logo {
@@ -182,6 +183,7 @@ a:has(#phone) {
     background: black;
     display: inline-block;
     position: relative;
+    box-shadow: 2px 2px 5px #d6d6d6;
 }
 #burger::before,
 #burger::after {
@@ -193,6 +195,8 @@ a:has(#phone) {
     position: absolute;
     transform-origin: center;
     transition: all 0.5s ease;
+    box-shadow: 2px 2px 5px #d6d6d6;
+
 }
 #burger::before {
     top: -8px;
@@ -220,6 +224,8 @@ a:has(#phone) {
 
 #burger.open {
     background:transparent;
+    box-shadow: none;
+
 }
 #burger.open::before {
     transform: rotate(45deg);
