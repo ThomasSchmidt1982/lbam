@@ -3,4 +3,4 @@ visionner le à --> https://lbam.onrender.com/
 
 !!! EN CONSTRUCTION !!!
 
-<img width="535" height="1132" alt="image" src="https://github.com/user-attachments/assets/9d7a13f2-1054-4cbd-a03a-c76457663ada" />
+<img width="471" height="837" alt="image" src="https://github.com/user-attachments/assets/5c5d918c-e3e1-4dc5-9a7e-6a783b4eb65f" />
