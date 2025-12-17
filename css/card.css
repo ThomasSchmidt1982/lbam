@@ -21,6 +21,8 @@ main {
     box-shadow: 2px 2px 5px #733d32;
 }
 .card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     width: 100%;
     height: 200px;
     object-fit: cover;
