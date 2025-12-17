@@ -31,12 +31,12 @@ main {
     text-align: center;
     font-family: "Inria", serif;
     font-weight: 100;
-    margin: 10px 0 5px;
+    padding: 20px;
     font-size:1.5em;
 }
 
 .card p {
-    padding: 10px;
+    padding: 0;
     text-align: center;
     color: #666;
     font-size: 0.9em;
