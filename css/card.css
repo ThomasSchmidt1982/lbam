@@ -1,4 +1,5 @@
 main h1{
+    padding-top: 15px;
     text-align: center;
     color: white;
     font-family: 'Inria', serif;
@@ -9,7 +10,6 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 20px;
 }
 .card{
     border-radius:  5px;

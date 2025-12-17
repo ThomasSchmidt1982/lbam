@@ -134,7 +134,10 @@ footer {
     width: auto;
     font-size: 1.5rem;
 }
-
+footer #facebook{
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
 #message {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -237,7 +240,6 @@ a:has(#phone) {
 #burger.open {
     background:transparent;
     box-shadow: none;
-
 }
 #burger.open::before {
     transform: rotate(45deg);
