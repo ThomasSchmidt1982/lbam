@@ -48,6 +48,11 @@ nav {
     grid-row-end: 2;
     background-color: white;
 }
+@media (min-width:768px){
+    nav {
+        grid-template-columns:  80px 1fr 80px;
+    }
+}
 #logo {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -64,13 +69,21 @@ nav {
 #entreprise {
     grid-column-start: 2;
     grid-column-end: 3;
-    font-size: 6vw;
-    text-overflow-ellipsis: 5;
     padding: 10px;
 }
-@media (min-width:768px) {
-    #entreprise {
-        font-size: 50px;
+#entreprise a {
+    font-family: "Style Script", cursive;
+    color: #3b1e19;
+    font-weight: 800;
+    word-spacing: 0.5rem;
+    font-style: normal;
+    text-shadow: 2px 2px 5px #d6d6d6;
+    font-size: 30px;
+    text-overflow-ellipsis: 5;
+}
+@media (min-width:500px) {
+    #entreprise a {
+        font-size: 45px;
     }
 }
 .nav-icons {
@@ -109,7 +122,11 @@ footer {
     object-fit: contain;
     background-color: white;
 }
-
+@media (min-width: 500px) {
+    footer {
+        grid-template-columns: 60px 1fr 60px 60px 60px;
+    }
+}
 .footer-icons {
     padding: 8px;
     height: 40px;
@@ -183,7 +200,7 @@ a:has(#phone) {
 #burger::after {
     top: 8px;
 }
-@media (min-width:768px) {
+@media (min-width:500px) {
  #burger{
      width: calc(var(--longueur-trait)*1.5);
      height: calc(var(--epaisseur-trait)*1.5);

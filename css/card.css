@@ -9,9 +9,10 @@ main {
 }
 .card{
     background-color: white;
-    opacity: .8;
+    opacity: 100%;
     width: 90%;
-    height: auto;
+    max-height: 500px;
+
 }
 .card img {
     width: 100%;
@@ -27,6 +28,7 @@ main {
 }
 
 .card p {
+    padding: 10px;
     text-align: center;
     color: #666;
     font-size: 0.9em;
