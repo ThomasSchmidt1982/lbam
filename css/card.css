@@ -42,3 +42,6 @@ main {
     color: #666;
     font-size: 1.15em;
 }
+article:first-of-type {
+    margin-top: 0;
+}
