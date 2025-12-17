@@ -2,18 +2,37 @@
     background-image: none;
     background-color: #FFCF99;
 }
+@media (min-width: 500px) {
+    #main{
+        grid-template-columns: none ;
+    }
+}
 main h1{
     text-align: center;
     color: white;
     font-family: 'Inria', serif;
     font-weight: 250;
     font-size: 2em;
-    padding: 20px 20px;
+}
+main h2{
+    text-align: center;
+    padding-bottom: 5px;
 }
 #google-map{
     border-radius: 5px;
-    box-shadow: 2px 2px 5px #5c4b37;
+    box-shadow: 2px 2px 5px #8a7153;
     height:400px;
     width: 90vw;
     margin: 20px;
+}
+main #phone{
+    margin: 0;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    font-family: 'Inria', serif;
+    font-weight: 250;
+    font-size: 1.5em;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #8a7153;
+    background-color: white;
 }
