@@ -175,6 +175,12 @@ a:has(#phone) {
     }
 }
 
+#link {
+    height:30px;
+    width:30px;
+    margin-right : 10px;
+}
+
 #burger {
     --longueur-trait:30px;
     --epaisseur-trait:3px;
@@ -261,7 +267,6 @@ ul {
 #responsive_menu li {
     list-style: none;
     border-top: 1px solid rgba(0, 0, 0, 0.45);
-
 }
 #responsive_menu.open {
     transform: translateY(0);
@@ -269,8 +274,16 @@ ul {
     pointer-events: auto;
 }
 #responsive_menu a {
+    text-align: center;
+    font-family:"Inria", serif;
     display: block;
     padding: 10px;
     font-size: 25px;
     color: rgb(81, 81, 81);
+}
+@media (min-width: 500px){
+    #responsive_menu a {
+        padding: 8px;
+        font-size: 35px;
+    }
 }
