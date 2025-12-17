@@ -36,3 +36,6 @@ main #phone{
     box-shadow: 2px 2px 5px #8a7153;
     background-color: white;
 }
+div ul {
+    padding-left:50px;
+}
