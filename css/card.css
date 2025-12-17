@@ -8,10 +8,12 @@ main {
     padding: 20px;
 }
 .card{
+    border-radius:  5px;
     background-color: white;
     opacity: 100%;
     width: 90%;
     max-height: 500px;
+    box-shadow: 2px 2px 5px #733d32;
 
 }
 .card img {
