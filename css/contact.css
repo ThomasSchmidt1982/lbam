@@ -1,6 +1,6 @@
 #main{
     background-image: none;
-    background-color: #59C9A5;
+    background: var(--backgnd-page-color);
 }
 @media (min-width: 500px) {
     #main{
@@ -13,6 +13,8 @@ main h1{
     font-family: 'Inria', serif;
     font-weight: 250;
     font-size: 2em;
+    text-shadow: 2px 2px 8px #c6c6c6;
+
 }
 main h2{
     text-align: center;
@@ -26,16 +28,27 @@ main h2{
     margin: 20px;
 }
 main #phone{
-    margin: 0;
-    text-align: center;
+    margin: auto;
+    align-items: center;
     padding: 5px 20px 5px 20px;
     font-family: 'Inria', serif;
-    font-weight: 250;
+    font-weight: 300;
     font-size: 1.3em;
-    border-radius: 3px;
-    box-shadow: 2px 2px 5px #8a7153;
-    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #984234;
+    background-color: #424242;
+    color: #FFFFFF;
+    width: fit-content;
 }
 div ul {
     padding-left:50px;
+}
+.bandeau{
+    background: var(--backgnd-bandeau-color);
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+main h3 {
+    text-align: center;
 }

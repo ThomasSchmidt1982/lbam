@@ -4,6 +4,9 @@
     padding: 0;
 
     --epaisseur-nav: 100px;
+    --backgnd-page-color: linear-gradient(45deg, #FFCF99, #FFB140);
+    --backgnd-bandeau-color: linear-gradient(45deg, #FF6F59, #FF6F49);
+    --text-shad-black-on-white: 1px 1px 3px rgba(94, 94, 94, 0.46);
 
 }
 
@@ -19,21 +22,17 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     display: grid;
-    grid-template-rows: 10vh 1fr 10vh;
+    grid-template-rows: var(--epaisseur-nav) 1fr 10vh;
     height: 100vh;
     margin: 0;
     padding: 0;
 }
-@media (min-width:768px) {
+@media (min-width:500px) {
     body {
         grid-template-rows: var(--epaisseur-nav) 1fr 80px;
     }
 }
-@media (orientation: landscape) {
-    body {
-        grid-template-rows: 80px 1fr 60px;
-    }
-}
+
 
 nav {
     position: relative;
@@ -70,15 +69,17 @@ nav {
 #entreprise {
     grid-column-start: 2;
     grid-column-end: 3;
-    padding: 10px;
+    padding: 2px;
 }
 #entreprise a {
     font-family: "Style Script", cursive;
-    color: #3b1e19;
+    color: #912F40;
     font-weight: 800;
     word-spacing: 0.5rem;
     font-style: normal;
-    text-shadow: 2px 2px 5px #d6d6d6;
+    letter-spacing: .1rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(145, 47, 64, 0.46);
     font-size: 30px;
     text-overflow-ellipsis: 5;
 }
@@ -86,6 +87,17 @@ nav {
     #entreprise a {
         font-size: 45px;
     }
+}
+#entreprise h2 {
+    font-family: "Style Script", cursive;
+    color: #5e5e5e;
+    font-weight: 100;
+    word-spacing: .5rem;
+    letter-spacing: .1rem;
+    text-shadow: 1px 1px 3px rgba(94, 94, 94, 0.46);
+    font-size: 20px;
+    text-align: center;
+    margin: -15px;
 }
 .nav-icons {
     grid-column-start: 3;
@@ -147,6 +159,8 @@ footer #facebook{
     font-weight: 300;
     font-size: 10vw;
     color: rgba(255, 255, 255, 0.82);
+    text-shadow: 1px 1px 3px rgba(94, 94, 94, 0.46);
+
 }
 @media screen and (min-width:500px) {
     #message {
@@ -156,16 +170,14 @@ footer #facebook{
 #annonce {
     font-family: 'Inria Sans', sans-serif;
     font-weight: 500;
-    border-radius: 5px;
     padding: 5%;
     max-height: 60%;
-    max-width: 80%;
+    max-width: 100%;
     grid-row-start: 2;
     grid-row-end: 3;
-    background-color: rgba(255, 255, 255, 0.65);
-    transform: skew(-10deg);
-    text-overflow: fade;
-    margin: 50px 50px;
+    background: var(--backgnd-bandeau-color);
+    color: #FFFFFF;
+
 }
 @media (min-width:500px) {
     #annonce {
@@ -176,6 +188,7 @@ footer #facebook{
 a:has(#phone) {
     justify-self: start;
     font-size: 25px;
+    text-shadow: var(--text-shad-black-on-white);
 }
 @media (min-width:500px) {
     a #phone {
