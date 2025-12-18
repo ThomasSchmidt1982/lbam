@@ -60,5 +60,3 @@ fetch('/data.json')
             });
         });
     })
-    .catch(error => console.error('Erreur : ', error));
-
