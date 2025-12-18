@@ -45,7 +45,7 @@ fetch('/data.json')
                 const cardHtml = ` 
             <article class="card">
                 <img src="/img/produit/${patisseries.picture}" alt="La patisserie${patisseries.name}" 
-         data-default="/img/produit/default.jpg">
+         data-default="/img/produit/default.webp">
                 <h2>${patisseries.name}</h2>
                 <p>${patisseries.description}</p>
                 <p class="tarif">${patisseries.price}</p>
