@@ -6,10 +6,23 @@ main h1{
     font-weight: 250;
     font-size: 2em;
 }
-main {
+main #patisseries-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
     gap: 20px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+    main #patisseries-list {
+        grid-template-columns: 1fr 1fr; /* 2 colonnes sur grand écran */
+    }
+}
+
+@media (min-width: 1024px) {
+    main #patisseries-list {
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    }
 }
 .card{
     margin-top: 20px;
@@ -17,7 +30,7 @@ main {
     background-color: white;
     opacity: 100%;
     width: 90%;
-    max-height: 500px;
+    max-height: 500px ;
     box-shadow: 2px 2px 5px #733d32;
 }
 .card img {
@@ -41,7 +54,4 @@ main {
     text-align: center;
     color: #666;
     font-size: 1.15em;
-}
-article:first-of-type {
-    margin-top: 0;
 }

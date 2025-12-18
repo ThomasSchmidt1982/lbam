@@ -1,0 +1,100 @@
+{
+  "patisseries": [
+    {
+      "id": 0,
+      "name": "Gâteau minute",
+      "description": "Le fameux Gâteau minute du marais poitevin, pur beurre",
+      "price": "8€ le gateau",
+      "picture": "gato0.jpeg",
+      "stock": true
+    },
+    {
+      "id": 1,
+      "name": "Gâteau citron meringué",
+      "description": "Tarte au citron avec meringues et menthe",
+      "price": "10€ le gateau",
+      "picture": "gato1.webp",
+      "stock": true
+    },
+    {
+      "id": 2,
+      "name": "Flan",
+      "description": "Un flan authentique",
+      "price": "2€ le flan",
+      "picture": "gato2.webp",
+      "stock": true
+    },
+    {
+      "id": 3,
+      "name": "Cookie",
+      "description": "Le grand classique avec pépites de chocolat",
+      "price": "2€ le cookie",
+      "picture": "gato3.webp",
+      "stock": true
+    },
+    {
+      "id": 4,
+      "name": "Galette",
+      "description": "100% pur beurre",
+      "price": "5€ la galette",
+      "picture": "gato4.webp",
+      "stock": true
+    },
+    {
+      "id": 5,
+      "name": "Gateau aux fruits",
+      "description": "fruit et nougatine",
+      "price": "15€ le gateau",
+      "picture": "gato5.webp",
+      "stock": true
+    },
+    {
+      "id": 6,
+      "name": "Default",
+      "description": "Entrer une description",
+      "price": "..€ le gateau",
+      "picture": "gato6.webp",
+      "stock": true
+    },
+    {
+      "id": 7,
+      "name": "Default",
+      "description": "Entrer une description",
+      "price": "..€ le gateau",
+      "picture": "gato7.webp",
+      "stock": true
+    },
+    {
+      "id": 8,
+      "name": "Default",
+      "description": "Entrer une description",
+      "price": "..€ le gateau",
+      "picture": "gato8.webp",
+      "stock": true
+    },
+    {
+      "id": 9,
+      "name": "Default",
+      "description": "Entrer une description",
+      "price": "..€ le gateau",
+      "picture": "gato9.webp",
+      "stock": true
+    },
+    {
+      "id": 10,
+      "name": "Default",
+      "description": "Entrer une description",
+      "price": "..€ le gateau",
+      "picture": "gato10.webp",
+      "stock": true
+    },
+    {
+      "id": 11,
+      "name": "Default",
+      "description": "Entrer une description",
+      "price": "..€ le gateau",
+      "picture": "gato11.webp",
+      "stock": true
+    }
+  ]
+}

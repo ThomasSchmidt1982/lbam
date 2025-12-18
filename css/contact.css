@@ -48,6 +48,8 @@ div ul {
     width: 100%;
     height: auto;
     padding: 20px;
+    font-size: 18px;
+    color: var(--font-bandeau-color);
 }
 main h3 {
     text-align: center;

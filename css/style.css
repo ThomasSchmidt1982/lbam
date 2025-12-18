@@ -7,6 +7,7 @@
     --backgnd-page-color: linear-gradient(45deg, #FFCF99, #FFB140);
     --backgnd-bandeau-color: linear-gradient(45deg, #FF6F59, #FF6F49);
     --text-shad-black-on-white: 1px 1px 3px rgba(94, 94, 94, 0.46);
+    --font-bandeau-color : #FFFFFF;
 
 }
 
@@ -123,7 +124,16 @@ main {
     place-items: center;
     overflow-y: auto; /* Active le scroll vertical */
 }
-
+main h1 {
+    padding: 20px;
+}
+main h2 {
+    padding: 10px;
+}
+main ul {
+    padding: 0.2em;
+    margin: 0.2em;
+}
 footer {
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     align-items: center;
@@ -171,13 +181,14 @@ footer #facebook{
     font-family: 'Inria Sans', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    padding: 5%;
-    max-height: 60%;
+    padding: 15px;
+    margin-bottom: 15px;
+    max-height: fit-content;
     max-width: 100%;
     grid-row-start: 2;
     grid-row-end: 3;
     background: var(--backgnd-bandeau-color);
-    color: #FFFFFF;
+    color: var(--font-bandeau-color);
 
 }
 @media (min-width:500px) {
@@ -281,7 +292,7 @@ a:has(#phone) {
     pointer-events: none; /* Non cliquable */
     transition: transform 0.5s cubic-bezier(0.3, 0.2, 0.2, 1.25), opacity 0.5s ease;
 }
-ul {
+nav ul {
     padding: 0;
     margin: 0;
 }
