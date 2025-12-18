@@ -1,17 +1,3 @@
-fetch('/html/_nav.html')
-    .then(res => res.text())
-    .then(html => {
-        document.getElementById('nav').innerHTML = html;
-        const link = document.getElementById('link');
-        if (link) {
-            link.addEventListener('click', showResponsiveMenu);
-        }
-    });
-
-fetch('/html/_footer.html')
-    .then(res => res.text())
-    .then(html => document.getElementById('footer').innerHTML = html)
-
 function showResponsiveMenu() {
     var menu = document.getElementById("responsive_menu");
     var icon = document.getElementById("burger");
@@ -34,15 +20,32 @@ function showResponsiveMenu() {
 }
 
 
-fetch('/data.json')
-    .then(res => res.json())
-    .then(data => {
+document.addEventListener('DOMContentLoaded', function () {
 
-        const container = document.getElementById('patisseries-list')
+    fetch('/html/_nav.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('nav').innerHTML = html;
+            const link = document.getElementById('link');
+            if (link) {
+                link.addEventListener('click', showResponsiveMenu);
+            }
+        });
 
-        data.patisseries.forEach(patisseries => {
-            if (patisseries.stock === true) {
-                const cardHtml = ` 
+    fetch('/html/_footer.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('footer').innerHTML = html)
+
+
+    fetch('/data.json')
+        .then(res => res.json())
+        .then(data => {
+
+            const container = document.getElementById('patisseries-list')
+            if (container) {
+                data.patisseries.forEach(patisseries => {
+                    if (patisseries.stock === true) {
+                        const cardHtml = ` 
             <article class="card">
                 <img src="/img/produit/${patisseries.picture}" alt="La patisserie${patisseries.name}" 
          data-default="/img/produit/default.webp">
@@ -51,12 +54,14 @@ fetch('/data.json')
                 <p class="tarif">${patisseries.price}</p>
             </article>
             `;
-                container.innerHTML += cardHtml;
+                        container.innerHTML += cardHtml;
+                    }
+                });
+                document.querySelectorAll('.card img').forEach(img => {
+                    img.addEventListener('error', function () {
+                        this.src = this.dataset.default;
+                    });
+                });
             }
         });
-        document.querySelectorAll('.card img').forEach(img => {
-            img.addEventListener('error', function() {
-                this.src = this.dataset.default;
-            });
-        });
-    })
+})
