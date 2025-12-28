@@ -4,7 +4,7 @@
     padding: 0;
 
     --epaisseur-nav: 100px;
-    --backgnd-page-color: linear-gradient(45deg, #FFCF99, #FFB140);
+    --backgnd-page-color: linear-gradient(45deg, #FFB140, #FFB140);
     --backgnd-bandeau-color: linear-gradient(45deg, #FF6F59, #FF6F49);
     --text-shad-black-on-white: 1px 1px 3px rgba(94, 94, 94, 0.46);
     --font-bandeau-color : #FFFFFF;
