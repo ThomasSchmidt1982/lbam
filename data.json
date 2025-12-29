@@ -6,95 +6,170 @@
       "description": "Le fameux Gâteau minute du marais poitevin, pur beurre",
       "price": "8€ le gateau",
       "picture": "minute.webp",
-      "stock": true
+      "seasonal": "disponible",
+      "visible": true
     },
     {
       "id": 1,
-      "name": "Millefeuille",
-      "description": "Le millefeuille classique avec sucre glace",
-      "price": "5€ le gateau",
-      "picture": "millefeuille.webp",
-      "stock": true
+      "name": "~ Chausson ~",
+      "description": "Le chausson au pommes",
+      "price": "n/a",
+      "picture": "chausson.webp",
+      "seasonal": "disponible",
+      "visible": true
     },
     {
       "id": 2,
-      "name": "Flan",
-      "description": "Un flan authentique",
-      "price": "2€ le flan",
-      "picture": "flan.webp",
-      "stock": true
+      "name": "~ Feuilletté Abricot ~",
+      "description": "Pâte feuilllettée maison, flanc et abricot",
+      "price": "n/a",
+      "picture": "feuilletté-abricot.webp",
+      "seasonal": "disponible",
+      "visible": true
     },
     {
       "id": 3,
-      "name": "Cookie",
+      "name": "~ Cookie ~",
       "description": "Le grand classique avec pépites de chocolat",
-      "price": "2€ le cookie",
+      "price": "n/a",
       "picture": "cookie.webp",
-      "stock": true
+      "seasonal": "disponible",
+      "visible": true
     },
     {
       "id": 4,
-      "name": "Brioche vendéenne",
-      "description": "100% pur beurre",
-      "price": "5€ la galette",
+      "name": "Eclair café",
+      "description": "Eclair café",
+      "price": "n/a",
+      "picture": "eclair-cafe.webp",
+      "seasonal": "disponible",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "Eclair chocolat",
+      "description": "Eclairs chocolat ou café",
+      "price": "n/a",
+      "picture": "eclair-chocolat.webp",
+      "seasonal": "disponible",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "~ Brioche vendéenne ~",
+      "description": "La vraie brioche 100% pur beurre et 100% vendéenne",
+      "price": "n/a",
       "picture": "brioche.webp",
-      "stock": true
+      "seasonal": "disponible",
+      "visible": true
     },
     {
       "id": 5,
-      "name": "Gateau aux fruits",
-      "description": "fruit et nougatine",
-      "price": "15€ le gateau",
-      "picture": "fruit1.webp",
-      "stock": true
+      "name": "~ Charentais ~",
+      "description": "Le gâteau charentais pur beurre",
+      "price": "n/a",
+      "picture": "charentais.webp",
+      "seasonal": "disponible",
+      "visible": true
     },
     {
       "id": 6,
-      "name": "Paris Brest",
-      "description": "Entrer une description",
-      "price": "..€ le gateau",
-      "picture": "paris-brest.webp",
-      "stock": true
+      "name": "~ Frangipane ~",
+      "description": "La galette des rois à la frangipane avec sa couronne",
+      "price": "n/a",
+      "picture": "frangipane.webp",
+      "seasonal": "disponible en Janvier",
+      "visible": true
     },
     {
       "id": 7,
-      "name": "Forêt Noire",
-      "description": "Entrer une description",
-      "price": "..€ le gateau",
-      "picture": "foret-noire2.webp",
-      "stock": true
+      "name": "~ Galette des rois ~",
+      "description": "La galette des rois briochée  avec sa couronne",
+      "price": "n/a",
+      "picture": "galette-roi.webp",
+      "seasonal": "disponible en Janvier",
+      "visible": true
     },
     {
       "id": 8,
-      "name": "Tourtisseaux",
-      "description": "Disponible en février/mars",
-      "price": "5€ les 3",
+      "name": "~ Tourtisseaux ~",
+      "description": "Les fameux tourtisseaux vendéens faits maison",
+      "price": "n/a",
       "picture": "tourtisseau.webp",
-      "stock": true
+      "seasonal": "disponible en Février",
+      "visible": true
     },
     {
       "id": 9,
-      "name": "Buche",
-      "description": "La bûche de noël disponible en décembre",
-      "price": "10€ le gateau",
-      "picture": "buche1.webp",
-      "stock": true
+      "name": "~ Fraisier ~",
+      "description": "Le fraisier avec de jolis fruits frais et de saison",
+      "price": "n/a",
+      "picture": "fraisier.webp",
+      "seasonal": "disponible de Mai à Août",
+      "visible": true
     },
     {
       "id": 10,
-      "name": "Eclair",
-      "description": "Eclairs chocolat ou café",
-      "price": "2€ le gateau",
-      "picture": "eclair.webp",
-      "stock": true
+      "name": "~ Gâteau aux fruits rouges ~",
+      "description": "Le gâteau aux fruits rouges frais et de saison",
+      "price": "n/a",
+      "picture": "fruit-rouge.webp",
+      "seasonal": "disponible de Mai à Août",
+      "visible": true
+    },
+    {
+      "id": 11,
+      "name": "~ Gâteau aux fruits ~",
+      "description": "Le gâteau aux fruits frais et de saison",
+      "price": "n/a",
+      "picture": "fruit.webp",
+      "seasonal": "disponible de Mai à Août",
+      "visible": true
+    },
+    {
+      "id": 12,
+      "name": "~ Gâteau aux fruits fin de saison ~",
+      "description": "Le gâteau aux fruits frais de fin de saison",
+      "price": "n/a",
+      "picture": "fruit2.webp",
+      "seasonal": "disponible de Mai à Août",
+      "visible": true
+    },
+    {
+      "id": 13,
+      "name": "~ Buche ~",
+      "description": "La bûche pour les fêtes de fin d'année (parfums au choix)",
+      "price": "n/a",
+      "picture": "buche1.webp",
+      "seasonal": "disponible en Décembre",
+      "visible": true
+    },
+    {
+      "id": 15,
+      "name": "~ Paris Brest ~",
+      "description": "Le biscuit Paris Brest",
+      "price": "n/a",
+      "picture": "paris-brest.webp",
+      "seasonal": "sur commande",
+      "visible": true
+    },
+    {
+      "id": 16,
+      "name": "~ Forêt Noire ~",
+      "description": "Le biscuit de la Forêt Noire",
+      "price": "n/a",
+      "picture": "foret-noire2.webp",
+      "seasonal": "sur commande",
+      "visible": true
     },
     {
       "id": 11,
       "name": "Default",
       "description": "Entrer une description",
-      "price": "..€ le gateau",
-      "picture": "gato11.webp",
-      "stock": true
+      "price": "n/a",
+      "picture": "xxxxxx.webp",
+      "seasonal": "non disponible",
+      "visible": false
     }
   ]
 }

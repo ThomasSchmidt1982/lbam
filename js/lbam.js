@@ -44,14 +44,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const container = document.getElementById('patisseries-list')
             if (container) {
                 data.patisseries.forEach(patisseries => {
-                    if (patisseries.stock === true) {
+                    if (patisseries.visible === true) {
                         const cardHtml = ` 
             <article class="card">
                 <img src="/img/produit/${patisseries.picture}" alt="La patisserie${patisseries.name}" 
          data-default="/img/produit/default.webp">
                 <h2>${patisseries.name}</h2>
-                <p>${patisseries.description}</p>
-                <p class="tarif">${patisseries.price}</p>
+                <p class="description">${patisseries.description}</p>
+                <p class="seasonal">${patisseries.seasonal}</p>
             </article>
             `;
                         container.innerHTML += cardHtml;
