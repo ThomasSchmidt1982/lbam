@@ -2,18 +2,18 @@
   "patisseries": [
     {
       "id": 0,
-      "name": "Gâteau Minute",
+      "name": "~ Gâteau Minute ~",
       "description": "Le fameux Gâteau minute du marais poitevin, pur beurre",
       "price": "8€ le gateau",
-      "picture": "gato0.webp",
+      "picture": "minute.webp",
       "stock": true
     },
     {
       "id": 1,
-      "name": "Gâteau citron meringué",
-      "description": "Tarte au citron avec meringues et menthe",
-      "price": "10€ le gateau",
-      "picture": "gato1.webp",
+      "name": "Millefeuille",
+      "description": "Le millefeuille classique avec sucre glace",
+      "price": "5€ le gateau",
+      "picture": "millefeuille.webp",
       "stock": true
     },
     {
@@ -21,7 +21,7 @@
       "name": "Flan",
       "description": "Un flan authentique",
       "price": "2€ le flan",
-      "picture": "gato2.webp",
+      "picture": "flan.webp",
       "stock": true
     },
     {
@@ -29,15 +29,15 @@
       "name": "Cookie",
       "description": "Le grand classique avec pépites de chocolat",
       "price": "2€ le cookie",
-      "picture": "gato3.webp",
+      "picture": "cookie.webp",
       "stock": true
     },
     {
       "id": 4,
-      "name": "Galette",
+      "name": "Brioche vendéenne",
       "description": "100% pur beurre",
       "price": "5€ la galette",
-      "picture": "gato4.webp",
+      "picture": "brioche.webp",
       "stock": true
     },
     {
@@ -45,47 +45,47 @@
       "name": "Gateau aux fruits",
       "description": "fruit et nougatine",
       "price": "15€ le gateau",
-      "picture": "gato5.webp",
+      "picture": "fruit1.webp",
       "stock": true
     },
     {
       "id": 6,
-      "name": "Default",
+      "name": "Paris Brest",
       "description": "Entrer une description",
       "price": "..€ le gateau",
-      "picture": "gato6.webp",
+      "picture": "paris-brest.webp",
       "stock": true
     },
     {
       "id": 7,
-      "name": "Default",
+      "name": "Forêt Noire",
       "description": "Entrer une description",
       "price": "..€ le gateau",
-      "picture": "gato7.webp",
+      "picture": "foret-noire2.webp",
       "stock": true
     },
     {
       "id": 8,
-      "name": "Default",
-      "description": "Entrer une description",
-      "price": "..€ le gateau",
-      "picture": "gato8.webp",
+      "name": "Tourtisseaux",
+      "description": "Disponible en février/mars",
+      "price": "5€ les 3",
+      "picture": "tourtisseau.webp",
       "stock": true
     },
     {
       "id": 9,
-      "name": "Default",
-      "description": "Entrer une description",
-      "price": "..€ le gateau",
-      "picture": "gato9.webp",
+      "name": "Buche",
+      "description": "La bûche de noël disponible en décembre",
+      "price": "10€ le gateau",
+      "picture": "buche1.webp",
       "stock": true
     },
     {
       "id": 10,
-      "name": "Default",
-      "description": "Entrer une description",
-      "price": "..€ le gateau",
-      "picture": "gato10.webp",
+      "name": "Eclair",
+      "description": "Eclairs chocolat ou café",
+      "price": "2€ le gateau",
+      "picture": "eclair.webp",
       "stock": true
     },
     {
