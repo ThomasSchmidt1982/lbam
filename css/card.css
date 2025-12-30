@@ -17,7 +17,9 @@ main #patisseries-list{
     main #patisseries-list {
         grid-template-columns: 1fr 1fr; /* 2 colonnes sur grand écran */
     }
-}
+    .card img {
+        height: auto;
+    }}
 
 @media (min-width: 1024px) {
     main #patisseries-list {
@@ -44,6 +46,7 @@ main #patisseries-list{
     object-position: center;
     filter: drop-shadow(10px 10px 4px #8f8f8f);
 }
+
 
 .card h2 {
     color: black;
