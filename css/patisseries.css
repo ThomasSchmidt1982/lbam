@@ -9,3 +9,9 @@ main h1 {
 .bandeau {
     background: var(--backgnd-bandeau-color);
 }
+main{
+    padding: 20px;
+}
+main h2{
+    margin-top: 15px;
+}

@@ -25,6 +25,7 @@ main #patisseries-list{
     }
 }
 .card{
+    padding:20px;
     margin-top: 20px;
     border-radius:  5px;
     background-color: white;
@@ -32,13 +33,16 @@ main #patisseries-list{
     width: 90%;
     max-height: 600px ;
     box-shadow: 2px 2px 5px #733d32;
+    align-items: center;
 }
 .card img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    filter: drop-shadow(10px 10px 4px #8f8f8f);
 }
 
 .card h2 {

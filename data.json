@@ -5,7 +5,7 @@
       "name": "~ Gâteau Minute ~",
       "description": "Le fameux Gâteau minute du marais poitevin, pur beurre",
       "price": "8€ le gateau",
-      "picture": "minute.webp",
+      "picture": "minute-detouree.webp",
       "seasonal": "disponible",
       "visible": true
     },
@@ -14,16 +14,16 @@
       "name": "~ Chausson ~",
       "description": "Le chausson au pommes",
       "price": "n/a",
-      "picture": "chausson.webp",
+      "picture": "chausson-detouree.webp",
       "seasonal": "disponible",
       "visible": true
     },
     {
       "id": 2,
-      "name": "~ Feuilletté Abricot ~",
-      "description": "Pâte feuilllettée maison, flanc et abricot",
+      "name": "~ Panier Abricot ~",
+      "description": "Pâte feuillletée maison, crème pâtissière et abricot",
       "price": "n/a",
-      "picture": "feuilletté-abricot.webp",
+      "picture": "panier-abricot-detouree.webp",
       "seasonal": "disponible",
       "visible": true
     },
@@ -32,34 +32,43 @@
       "name": "~ Cookie ~",
       "description": "Le grand classique avec pépites de chocolat",
       "price": "n/a",
-      "picture": "cookie.webp",
+      "picture": "cookie-groupe-detouree.webp",
       "seasonal": "disponible",
       "visible": true
     },
     {
       "id": 4,
       "name": "Eclair café",
-      "description": "Eclair café",
+      "description": "Eclair au goût café",
       "price": "n/a",
-      "picture": "eclair-cafe.webp",
+      "picture": "eclair-cafe-detouree.webp",
       "seasonal": "disponible",
       "visible": true
     },
     {
       "id": 4,
       "name": "Eclair chocolat",
-      "description": "Eclairs chocolat ou café",
+      "description": "Eclair au goût chocolat",
       "price": "n/a",
-      "picture": "eclair-chocolat.webp",
+      "picture": "eclair-chocolat-detouree.webp",
       "seasonal": "disponible",
       "visible": true
     },
     {
       "id": 4,
-      "name": "~ Brioche vendéenne ~",
+      "name": "Gland",
+      "description": "Le gland pâtissier",
+      "price": "n/a",
+      "picture": "gland-detouree.webp",
+      "seasonal": "disponible",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "~ Brioche tressée ~",
       "description": "La vraie brioche 100% pur beurre et 100% vendéenne",
       "price": "n/a",
-      "picture": "brioche.webp",
+      "picture": "brioche-detouree.webp",
       "seasonal": "disponible",
       "visible": true
     },
@@ -73,11 +82,20 @@
       "visible": true
     },
     {
+    "id": 6,
+    "name": "~ Sablé ~",
+    "description": "Les petits sablés au beurre",
+    "price": "n/a",
+    "picture": "sable-detouree.webp",
+    "seasonal": "disponible",
+    "visible": true
+    },
+    {
       "id": 6,
       "name": "~ Frangipane ~",
       "description": "La galette des rois à la frangipane avec sa couronne",
       "price": "n/a",
-      "picture": "frangipane.webp",
+      "picture": "frangipane-detouree.webp",
       "seasonal": "disponible en Janvier",
       "visible": true
     },
@@ -104,7 +122,7 @@
       "name": "~ Fraisier ~",
       "description": "Le fraisier avec de jolis fruits frais et de saison",
       "price": "n/a",
-      "picture": "fraisier.webp",
+      "picture": "fraisier-detouree.webp",
       "seasonal": "disponible de Mai à Août",
       "visible": true
     },
@@ -113,7 +131,7 @@
       "name": "~ Gâteau aux fruits rouges ~",
       "description": "Le gâteau aux fruits rouges frais et de saison",
       "price": "n/a",
-      "picture": "fruit-rouge.webp",
+      "picture": "fruit-rouge-detouree.webp",
       "seasonal": "disponible de Mai à Août",
       "visible": true
     },
@@ -122,7 +140,7 @@
       "name": "~ Gâteau aux fruits ~",
       "description": "Le gâteau aux fruits frais et de saison",
       "price": "n/a",
-      "picture": "fruit.webp",
+      "picture": "fruit-detouree.webp",
       "seasonal": "disponible de Mai à Août",
       "visible": true
     },
@@ -131,7 +149,7 @@
       "name": "~ Gâteau aux fruits fin de saison ~",
       "description": "Le gâteau aux fruits frais de fin de saison",
       "price": "n/a",
-      "picture": "fruit2.webp",
+      "picture": "fruit2-detouree.webp",
       "seasonal": "disponible de Mai à Août",
       "visible": true
     },
@@ -140,7 +158,7 @@
       "name": "~ Buche ~",
       "description": "La bûche pour les fêtes de fin d'année (parfums au choix)",
       "price": "n/a",
-      "picture": "buche1.webp",
+      "picture": "buche-detouree.webp",
       "seasonal": "disponible en Décembre",
       "visible": true
     },
@@ -149,7 +167,7 @@
       "name": "~ Paris Brest ~",
       "description": "Le biscuit Paris Brest",
       "price": "n/a",
-      "picture": "paris-brest.webp",
+      "picture": "paris-brest-detouree.webp",
       "seasonal": "sur commande",
       "visible": true
     },
@@ -158,7 +176,7 @@
       "name": "~ Forêt Noire ~",
       "description": "Le biscuit de la Forêt Noire",
       "price": "n/a",
-      "picture": "foret-noire2.webp",
+      "picture": "foret-noire-detouree.webp",
       "seasonal": "sur commande",
       "visible": true
     },
