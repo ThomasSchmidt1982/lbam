@@ -1,3 +1,6 @@
+{
+    box-sizing: border-box;
+}
 main h1{
     padding-top: 15px;
     text-align: center;
@@ -17,9 +20,7 @@ main #patisseries-list{
     main #patisseries-list {
         grid-template-columns: 1fr 1fr; /* 2 colonnes sur grand écran */
     }
-    .card img {
-        height: auto;
-    }}
+}
 
 @media (min-width: 1024px) {
     main #patisseries-list {
@@ -33,15 +34,23 @@ main #patisseries-list{
     background-color: white;
     opacity: 100%;
     width: 90%;
-    max-height: 600px ;
     box-shadow: 2px 2px 5px #733d32;
     align-items: center;
+}
+@media (max-width: 799px){
+    .card{
+        height: fit-content;
+    }
+    .card img {
+        height: auto;
+    }
 }
 .card img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
-    height: 400px;
+    min-height: 300px;
+    max-height: 500px ;
     object-fit: contain;
     object-position: center;
     filter: drop-shadow(10px 10px 4px #8f8f8f);
