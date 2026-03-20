@@ -2,8 +2,9 @@
   "patisseries": [
     {
       "id": 0,
+      "section": 0,
       "name": "~ Gâteau Minute ~",
-      "description": "Le fameux Gâteau minute du marais poitevin, pur beurre",
+      "description": "Spécialité Vendéenne, entre le Quatre-quarts et le Savoie",
       "price": "8€ le gateau",
       "picture": "minute-detouree.webp",
       "seasonal": "disponible",
@@ -11,33 +12,97 @@
     },
     {
       "id": 1,
-      "name": "~ Chausson ~",
-      "description": "Le chausson au pommes",
+      "section": 0,
+      "name": "~ Galette Charentaise ~",
+      "description": "Sablé au beurre avec fruits confits sans angélique",
+      "price": "n/a",
+      "picture": "charentais.webp",
+      "seasonal": "disponible",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "section": 0,
+      "name": "~ Brioche Tressée ~",
+      "description": "100% pur beurre, recette familiale",
+      "price": "n/a",
+      "picture": "brioche-detouree.webp",
+      "seasonal": "disponible",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "section": 0,
+      "name": "~ Pruné ~",
+      "description": "Tarte à l'ancienne garnie de quetsches",
+      "price": "n/a",
+      "picture": "prune.webp",
+      "seasonal": "disponible",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "section": 1,
+      "name": "Chaussons aux pommes",
+      "description": "Pate feuilletée garnie de compote de pomme façon tatin",
       "price": "n/a",
       "picture": "chausson-detouree.webp",
       "seasonal": "disponible",
       "visible": true
     },
     {
-      "id": 2,
-      "name": "~ Panier Abricot ~",
-      "description": "Pâte feuillletée maison, crème pâtissière et abricot",
+      "id": 5,
+      "section": 1,
+      "name": "Panier Abricot",
+      "description": "Pate feuilletée, crème patissiere, abricots",
       "price": "n/a",
       "picture": "panier-abricot-detouree.webp",
       "seasonal": "disponible",
       "visible": true
     },
     {
-      "id": 3,
-      "name": "~ Cookie ~",
-      "description": "Le grand classique avec pépites de chocolat",
+      "id": 6,
+      "section": 1,
+      "name": "Tartelettes aux pommes",
+      "description": "Pate feuilletée, pommes",
       "price": "n/a",
-      "picture": "cookie-groupe-detouree.webp",
+      "picture": "xxxxx.webp",
       "seasonal": "disponible",
       "visible": true
     },
     {
-      "id": 4,
+      "id": 7,
+      "section": 2,
+      "name": "Flan Pâtissier",
+      "description": "COMMENTAIRES MANQUANT",
+      "price": "n/a",
+      "picture": "flan-patissier-lbam.webp",
+      "seasonal": "disponible",
+      "visible": true
+    },
+    {
+      "id": 8,
+      "section": 2,
+      "name": "Tarte aux fruits",
+      "description": "Tarte aux fruits au sirop, ou aux pommes",
+      "price": "n/a",
+      "picture": "xxxxx.webp",
+      "seasonal": "disponible",
+      "visible": true
+    },
+    {
+      "id": 9,
+      "section": 2,
+      "name": "Mille-feuilles",
+      "description": "COMMENTAIRE MANQUANT",
+      "price": "n/a",
+      "picture": "millefeuille.webp",
+      "seasonal": "disponible",
+      "visible": true
+    },
+    {
+      "id": 10,
+      "section": 2,
       "name": "Eclair café",
       "description": "Eclair au goût café",
       "price": "n/a",
@@ -46,7 +111,8 @@
       "visible": true
     },
     {
-      "id": 4,
+      "id": 11,
+      "section": 2,
       "name": "Eclair chocolat",
       "description": "Eclair au goût chocolat",
       "price": "n/a",
@@ -55,133 +121,198 @@
       "visible": true
     },
     {
-      "id": 4,
+      "id": 12,
+      "section": 2,
       "name": "Gland",
-      "description": "Le gland pâtissier",
+      "description": "Le gland pâtissier au kirsch ou au cointreau",
       "price": "n/a",
       "picture": "gland-detouree.webp",
       "seasonal": "disponible",
       "visible": true
     },
     {
-      "id": 4,
-      "name": "~ Brioche tressée ~",
-      "description": "La vraie brioche 100% pur beurre et 100% vendéenne",
+      "id": 13,
+      "section": 2,
+      "name": "~ Choux vanille ~",
+      "description": "COMMENTAIRE MANQUANT",
       "price": "n/a",
-      "picture": "brioche-detouree.webp",
+      "picture": "xxxxx.webp",
       "seasonal": "disponible",
       "visible": true
     },
     {
-      "id": 5,
-      "name": "~ Charentais ~",
-      "description": "Le gâteau charentais pur beurre",
+      "id": 14,
+      "section": 2,
+      "name": "~ Paris Brest ~",
+      "description": "COMMENTAIRE MANQUANT",
       "price": "n/a",
-      "picture": "charentais.webp",
+      "picture": "paris-brest-detouree.webp",
       "seasonal": "disponible",
       "visible": true
     },
     {
-    "id": 6,
-    "name": "~ Sablé ~",
-    "description": "Les petits sablés au beurre",
-    "price": "n/a",
-    "picture": "sable-detouree.webp",
-    "seasonal": "disponible",
-    "visible": true
+      "id": 15,
+      "section": 3,
+      "name": "~ Forêt Noire ~",
+      "description": "COMMENTAIRE MANQUANT",
+      "price": "n/a",
+      "picture": "foret-noire-detouree.webp",
+      "seasonal": "disponible",
+      "visible": true
+    },
+    {
+      "id": 16,
+      "section": 3,
+      "name": "~ Fraisier ~",
+      "description": "COMMENTAIRE MANQUANT",
+      "price": "n/a",
+      "picture": "fraisier-detouree.webp",
+      "seasonal": "disponible",
+      "visible": true
+    },
+    {
+      "id": 17,
+      "section": 3,
+      "name": "~ Poirier ~",
+      "description": "COMMENTAIRE MANQUANT",
+      "price": "n/a",
+      "picture": "xxxxx.webp",
+      "seasonal": "disponible",
+      "visible": true
     },
     {
       "id": 6,
+      "section": 0,
       "name": "~ Frangipane ~",
       "description": "La galette des rois à la frangipane avec sa couronne",
       "price": "n/a",
       "picture": "frangipane-detouree.webp",
       "seasonal": "disponible en Janvier",
-      "visible": true
+      "visible": false
     },
     {
       "id": 7,
+      "section": 0,
       "name": "~ Galette des rois ~",
       "description": "La galette des rois briochée  avec sa couronne",
       "price": "n/a",
       "picture": "galette-roi.webp",
       "seasonal": "disponible en Janvier",
-      "visible": true
+      "visible": false
     },
     {
       "id": 8,
+      "section": 0,
       "name": "~ Tourtisseaux ~",
       "description": "Les fameux tourtisseaux vendéens faits maison",
       "price": "n/a",
       "picture": "tourtisseau.webp",
       "seasonal": "disponible en Février",
-      "visible": true
+      "visible": false
     },
     {
       "id": 9,
+      "section": 0,
       "name": "~ Fraisier ~",
       "description": "Le fraisier avec de jolis fruits frais et de saison",
       "price": "n/a",
       "picture": "fraisier-detouree.webp",
       "seasonal": "disponible de Mai à Août",
-      "visible": true
+      "visible": false
     },
     {
       "id": 10,
+      "section": 0,
       "name": "~ Gâteau aux fruits rouges ~",
       "description": "Le gâteau aux fruits rouges frais et de saison",
       "price": "n/a",
       "picture": "fruit-rouge-detouree.webp",
       "seasonal": "disponible de Mai à Août",
-      "visible": true
+      "visible": false
     },
     {
       "id": 11,
+      "section": 0,
       "name": "~ Gâteau aux fruits ~",
       "description": "Le gâteau aux fruits frais et de saison",
       "price": "n/a",
       "picture": "fruit-detouree.webp",
       "seasonal": "disponible de Mai à Août",
-      "visible": true
+      "visible": false
     },
     {
       "id": 12,
+      "section": 0,
       "name": "~ Gâteau aux fruits fin de saison ~",
       "description": "Le gâteau aux fruits frais de fin de saison",
       "price": "n/a",
       "picture": "fruit2-detouree.webp",
       "seasonal": "disponible de Mai à Août",
-      "visible": true
+      "visible": false
     },
     {
       "id": 13,
+      "section": 0,
       "name": "~ Buche ~",
       "description": "La bûche pour les fêtes de fin d'année (parfums au choix)",
       "price": "n/a",
       "picture": "buche-detouree.webp",
       "seasonal": "disponible en Décembre",
-      "visible": true
+      "visible": false
     },
     {
       "id": 15,
-      "name": "~ Paris Brest ~",
+      "section": 0,
+      "name": "~ Paris Brest praliné ~",
       "description": "Le biscuit Paris Brest",
       "price": "n/a",
       "picture": "paris-brest-detouree.webp",
       "seasonal": "sur commande",
-      "visible": true
+      "visible": false
     },
     {
       "id": 16,
+      "section": 0,
       "name": "~ Forêt Noire ~",
       "description": "Le biscuit de la Forêt Noire",
       "price": "n/a",
       "picture": "foret-noire-detouree.webp",
       "seasonal": "sur commande",
+      "visible": false
+    },
+    {
+      "id": 17,
+      "section": 0,
+      "name": "~ Flan Patissier ~",
+      "description": "Le Flan Patissier classique",
+      "price": "n/a",
+      "picture": "flan-patissier-lbam.webp",
+      "seasonal": "sur commande",
+      "visible": false
+    },
+    {
+      "id": 18,
+      "section": 0,
+      "name": "~ Far aux pruneaux ~",
+      "description": "Le Far breton aux pruneaux",
+      "price": "n/a",
+      "picture": "far-pruneaux-lbam.webp",
+      "seasonal": "sur commande",
+      "visible": false
+    },
+    {
+      "id": 19,
+      "section": 3,
+      "name": "~ Tartelette Chocolat, fond Caramel beurre salé ~",
+      "description": "Délicieux",
+      "price": "n/a",
+      "picture": "tartelette-chocolat-fond-caramel-beurre-sale-lbam.webp",
+      "seasonal": "sur commande",
       "visible": true
     },
     {
       "id": 11,
+      "section": 0,
       "name": "Default",
       "description": "Entrer une description",
       "price": "n/a",

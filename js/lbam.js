@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(res => res.json())
         .then(data => {
 
-            const container = document.getElementById('patisseries-list')
-            if (container) {
+            const container0 = document.getElementById('section0')
+            if (container0) {
                 data.patisseries.forEach(patisseries => {
-                    if (patisseries.visible === true) {
+                    if (patisseries.visible === true && patisseries.section === 0) {
                         const cardHtml = ` 
             <article class="card">
                 <img src="/img/produit/${patisseries.picture}" alt="La patisserie${patisseries.name}" 
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p class="seasonal">${patisseries.seasonal}</p>
             </article>
             `;
-                        container.innerHTML += cardHtml;
+                        container0.innerHTML += cardHtml;
                     }
                 });
                 document.querySelectorAll('.card img').forEach(img => {
@@ -63,5 +63,72 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
                 });
             }
+            const container1 = document.getElementById('section1')
+            if (container1) {
+                data.patisseries.forEach(patisseries => {
+                    if (patisseries.visible === true && patisseries.section === 1) {
+                        const cardHtml = ` 
+            <article class="card">
+                <img src="/img/produit/${patisseries.picture}" alt="La patisserie${patisseries.name}" 
+         data-default="/img/produit/default.webp">
+                <h2>${patisseries.name}</h2>
+                <p class="description">${patisseries.description}</p>
+                <p class="seasonal">${patisseries.seasonal}</p>
+            </article>
+            `;
+                        container1.innerHTML += cardHtml;
+                    }
+                });
+                document.querySelectorAll('.card img').forEach(img => {
+                    img.addEventListener('error', function () {
+                        this.src = this.dataset.default;
+                    });
+                });
+            }
+            const container2 = document.getElementById('section2')
+            if (container2) {
+                data.patisseries.forEach(patisseries => {
+                    if (patisseries.visible === true && patisseries.section === 2) {
+                        const cardHtml = ` 
+            <article class="card">
+                <img src="/img/produit/${patisseries.picture}" alt="La patisserie${patisseries.name}" 
+         data-default="/img/produit/default.webp">
+                <h2>${patisseries.name}</h2>
+                <p class="description">${patisseries.description}</p>
+                <p class="seasonal">${patisseries.seasonal}</p>
+            </article>
+            `;
+                        container2.innerHTML += cardHtml;
+                    }
+                });
+                document.querySelectorAll('.card img').forEach(img => {
+                    img.addEventListener('error', function () {
+                        this.src = this.dataset.default;
+                    });
+                });
+            }
+            const container3 = document.getElementById('section3')
+            if (container3) {
+                data.patisseries.forEach(patisseries => {
+                    if (patisseries.visible === true && patisseries.section === 3) {
+                        const cardHtml = ` 
+            <article class="card">
+                <img src="/img/produit/${patisseries.picture}" alt="La patisserie${patisseries.name}" 
+         data-default="/img/produit/default.webp">
+                <h2>${patisseries.name}</h2>
+                <p class="description">${patisseries.description}</p>
+                <p class="seasonal">${patisseries.seasonal}</p>
+            </article>
+            `;
+                        container3.innerHTML += cardHtml;
+                    }
+                });
+                document.querySelectorAll('.card img').forEach(img => {
+                    img.addEventListener('error', function () {
+                        this.src = this.dataset.default;
+                    });
+                });
+            }
+
         });
 })

@@ -1,29 +1,25 @@
 {
     box-sizing: border-box;
 }
-main h1{
-    padding-top: 15px;
-    text-align: center;
-    color: white;
-    font-family: 'Inria', serif;
-    font-weight: 250;
-    font-size: 2em;
-}
+
 main #patisseries-list{
-    display: grid;
-    justify-items: center;
-    gap: 20px;
     margin-bottom: 20px;
 }
 
+main #patisseries-list > div {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
 @media (min-width: 800px) {
-    main #patisseries-list {
+    main #patisseries-list > div {
         grid-template-columns: 1fr 1fr; /* 2 colonnes sur grand écran */
     }
 }
 
 @media (min-width: 1024px) {
-    main #patisseries-list {
+    main #patisseries-list > div {
         grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
     }
 }

@@ -1,17 +1,27 @@
-#main{
+#main {
     background: var(--backgnd-page-color);
 }
-main h1 {
-    padding: 20px 20px;
-    max-width: 100%;
-    text-shadow: 2px 2px 8px #979797;
-}
-.bandeau {
-    background: var(--backgnd-bandeau-color);
-}
-main{
+
+main {
     padding: 20px;
 }
-main h2{
+
+main h1 {
+    padding: 20px;
+    max-width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Inria', serif;
+    font-weight: 250;
+    font-size: 2em;
+    text-shadow: 2px 2px 8px #979797;
+}
+
+main h2 {
     margin-top: 15px;
+    color: white;
+}
+
+.bandeau {
+    background: var(--backgnd-bandeau-color);
 }
