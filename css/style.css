@@ -168,7 +168,7 @@ footer #facebook{
 #message {
     grid-row-start: 1;
     grid-row-end: 2;
-    text-align: center;
+    text-align: left;
     padding: 5%;
     font-family: 'Inria Sans', sans-serif;
     font-weight: 400;
