@@ -122,8 +122,9 @@ main {
     display: grid;
     grid-row-start: 2;
     grid-row-end: 3;
-    background-image: url("../img/background1.webp");
-    background-size: cover;
+    background: var(--backgnd-page-color);
+    /* background-image: url("../img/background1.webp");
+    background-size: cover; */
     grid-template-rows: 1fr 1fr;
     align-content: start;
     place-items: center;
