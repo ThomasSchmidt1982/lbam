@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+
 body {
     display: grid;
     grid-template-rows: var(--epaisseur-nav) 1fr 10vh;
@@ -137,7 +138,7 @@ main h2 {
     padding: 10px;
 }
 main ul {
-    padding: 0.2em;
+    padding: 1em;
     margin: 0.2em;
 }
 footer {
