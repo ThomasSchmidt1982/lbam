@@ -131,4 +131,42 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
         });
+
+    var map = L.map('map', { scrollWheelZoom: false }).setView([46.393172, -0.854539], 10);
+    map.once('focus', function () { map.scrollWheelZoom.enable(); });
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    const pinIcon = L.divIcon({
+        className: '',
+        html: '<div style="font-size:24px;line-height:1;">📍</div>',
+        iconSize: [24, 24],
+        iconAnchor: [12, 24],
+        popupAnchor: [0, -26]
+    });
+
+    var marker1 = L.marker([46.362885, -0.85763], {icon: pinIcon}).addTo(map);
+    marker1.bindPopup("<b>Boucherie Charcuterie Gouin</b><br>66 r Georges Clemenceau<br>85770 Vix").openPopup();
+
+    var marker2 = L.marker([46.371874, -0.73918], {icon: pinIcon}).addTo(map);
+    marker2.bindPopup("<b>L'Epicerie d'Isa (Coop)</b><br>14 Rue du Dr Daroux<br>85420 Maillezais").openPopup();
+
+    var marker3 = L.marker([46.4771781, -0.8144931], {icon: pinIcon}).addTo(map);
+    marker3.bindPopup("<b>Coop</b><br>Rue du Porteau<br>85200 Fontenay-le-Comte").openPopup();
+
+    var marker4 = L.marker([46.421607971191406, -0.6815643906593323], {icon: pinIcon}).addTo(map);
+    marker4.bindPopup("<b>Boulangerie 'Sucré & Salé'</b><br>10 Place du Forail<br>85240 Nieul-sur-l'Autise").openPopup();
+
+    var marker5 = L.marker([46.2968228, -0.6918929], {icon: pinIcon}).addTo(map);
+    marker5.bindPopup("<b>Epicerie 'Saveurs d'Ici et d'Ailleurs'</b><br>Place de l'Eglise<br>79210 Arçais").openPopup();
+
+    var marker6 = L.marker([46.37175092717191, -0.7394391043447972], {icon: pinIcon}).addTo(map);
+    marker6.bindPopup("<b>Marché Mercredis et Samedis</b><br>Square des Ardennais<br>85420 Maillezais").openPopup();
+
+    var marker0 = L.marker([46.393172, -0.854539]).addTo(map);
+    marker0.bindPopup("<b>La Boîte à Minute</b><br>74, rue du communal<br>85200 Montreuil").openPopup();
+
 })

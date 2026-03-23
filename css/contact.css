@@ -64,3 +64,7 @@ table{
     max-width: 500px;
     margin: 20px auto;
 }
+#map {
+    height: 400px;
+    width: 100%;
+}

@@ -16,6 +16,10 @@ a {
     color: black;
 }
 
+a:hover {
+    opacity: 60%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
@@ -37,6 +41,7 @@ body {
 
 nav {
     position: relative;
+    z-index: 1000;
     margin: 0;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);

@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Style+Script&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+
 </head>
 
 <body>
@@ -32,51 +36,79 @@
     </div>
     <div>
         <h2>A l'atelier</h2>
+        <a href="https://www.google.com/maps/dir//74+Rue+du+Communal,+85200+Montreuil/@46.3826509,-0.8903607,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4806c571f3dc4dc5:0x78a301da28d66169!2m2!1d-0.8577497!2d46.3911507?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D">
         <h3>74, rue du communal</h3>
         <h3>85200 Montreuil</h3>
-        <h3>France</h3>
+        <h3>France</h3></a>
         <br>
-        <iframe id="google-map"
+
+        <!-- <iframe id="google-map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d351522.4776130623!2d-1.2363000469539411!3d46.50277831046692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4806c57a1abcf9ff%3A0xd4c94718d9deb590!2zTGEgQm_DrnRlIMOgIE1pbnV0ZQ!5e0!3m2!1sfr!2sfr!4v1765977820665!5m2!1sfr!2sfr"
                 width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+                -->
     </div>
+    <div id="map"></div>
+
     <div class="bandeau">
         <table>
             <caption>Horaires d'ouvertures de l'atelier</caption>
             <tr>
-                <td>Lundi : </td>
-                <td> - </td>
+                <td>Lundi :</td>
+                <td> -</td>
                 <td>14h - 18h30</td>
             </tr>
             <tr>
-                <td>Mardi : </td>
+                <td>Mardi :</td>
                 <td>9h - 12h</td>
                 <td>14h - 18h30</td>
             </tr>
             <tr>
-                <td>Mercredi : </td>
-                <td> - </td>
+                <td>Mercredi :</td>
+                <td> -</td>
                 <td>15h - 18h</td>
             </tr>
             <tr>
-                <td>Jeudi : </td>
+                <td>Jeudi :</td>
                 <td>9h - 12h</td>
                 <td>14h - 18h30</td>
             </tr>
             <tr>
-                <td>Vendredi : </td>
+                <td>Vendredi :</td>
                 <td>10h - 12h</td>
                 <td>14h - 18h30</td>
             </tr>
         </table>
     </div>
 
+    <div>
+        <h2>Les points de ventes</h2>
+        <ul>
+            <a href="https://www.google.com/maps/dir//Gouin+Fr%C3%A9d%C3%A9ric,+66+Rue+Georges+Clemenceau,+85770+Vix/@46.3405056,-0.7602176,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4806c5f730e3ffc7:0xd896b0d9082e417!2m2!1d-0.8583093!2d46.3635581?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D">
+            <li>Charcuterie Gouin à Vix</li></a>
+            <a href="https://epiceriedisa.fr/">
+            <li>L'Epicerie d'Isa (Coop), Maillezais</li></a>
+            <a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqEggBEC4YFBivARjHARiHAhiABDIGCAAQRRg5MhIIARAuGBQYrwEYxwEYhwIYgAQyFAgCEC4YChgLGK8BGMcBGIAEGI4FMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhge0gEINzQ1MWowajSoAgCwAgA&um=1&ie=UTF-8&fb=1&gl=fr&sa=X&geocode=KVMEYNHfwgZIMaOstKChbvF0&daddr=Centre+commercial+du+Porteau,+Rue+du+Porteau,+85200+Fontenay-le-Comte">
+            <li>Coop, rue du Porteau, Fontenay-le-Comte</li></a>
+            <a href="https://www.google.com/maps/dir//Sucr%C3%A9+%26+Sal%C3%A9,+10+Pl.+du+Forail,+85240+Rives-d'Autise/@46.3405056,-0.7602176,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4806d9e021ca5de1:0x234402c51bba2c37!2m2!1d-0.6816079!2d46.4217481?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D">
+            <li>Boulangerie "Sucré & Salé", Nieul-sur-l'Autise</li></a>
+            <a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDk1MTVqMGo0qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=fr&sa=X&geocode=KSFJ8Sew1wZIMQw7TGCH1j83&daddr=Pl.+de+l%27%C3%89glise,+79210+Ar%C3%A7ais">
+            <li>Epicerie "Saveurs d'Ici et d'Ailleurs", Arçais</li></a>
+            <a href="https://www.google.com/maps/dir//46.3717358,-0.7394763/@46.3716914,-0.7396339,21z/data=!4m2!4m1!3e0?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D">
+            <li>Marché, Square des Ardennais, Mercredi et Samedi matin, Maillezais</li></a>
+        </ul>
+    </div>
+    <br>
+
+    <div>N° de Siret : 91434364500018</div>
 
 </main>
 
 <footer id="footer"></footer>
-
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
 <script src="../js/lbam.js"></script>
+
 </body>
 </html>
