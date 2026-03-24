@@ -285,13 +285,13 @@ a:has(#phone) {
 #responsive_menu {
     position: absolute;
     top: 100%;
-    left: 0;
     right: 0;
+    width: 50vw;
     background: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 99;
 
-    display: flex; /* Gardez display: flex */
+    display: flex;
     flex-direction: column;
 
     transform: translateY(-100%); /* Caché au-dessus */
@@ -306,7 +306,7 @@ nav ul {
 
 #responsive_menu li {
     list-style: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.45);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 #responsive_menu.open {
     transform: translateY(0);
@@ -321,6 +321,12 @@ nav ul {
     font-size: 25px;
     color: rgb(81, 81, 81);
 }
+@media (max-width: 767px){
+    #responsive_menu {
+        width: 100vw;
+    }
+}
+
 @media (min-width: 500px){
     #responsive_menu a {
         padding: 8px;
