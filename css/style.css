@@ -68,14 +68,14 @@ nav {
 #logo {
     grid-column-start: 1;
     grid-column-end: 2;
-    padding: 10px;
+    padding: 0px;
     height: 40px;
-
+    margin-left: 10px;
 }
+
 @media (min-width: 500px) {
     #logo {
         height: 55px;
-        padding:5px;
     }
 }
 
@@ -98,7 +98,7 @@ nav {
 }
 @media (min-width:500px) {
     #entreprise a {
-        font-size: 45px;
+        font-size: 35px;
     }
 }
 #entreprise h2 {
@@ -163,7 +163,7 @@ footer {
     }
 }
 .footer-icons {
-    padding: 8px;
+    padding: 0px;
     height: 40px;
     width: auto;
     font-size: 1.5rem;
