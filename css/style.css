@@ -48,7 +48,6 @@ body {
 
 nav {
     position: relative;
-    overflow: hidden;
     z-index: 1000;
     margin: 0;
     padding: 0;
