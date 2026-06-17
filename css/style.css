@@ -293,7 +293,7 @@ a:has(#phone) {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 50vw;
+    width: 50%;
     background: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 99;
@@ -332,7 +332,7 @@ nav ul {
 }
 @media (max-width: 767px){
     #responsive_menu {
-        width: 100vw;
+        width: 100%;
     }
 }
 
