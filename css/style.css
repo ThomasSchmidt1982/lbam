@@ -213,6 +213,8 @@ a:has(#phone) {
     justify-self: start;
     font-size: 25px;
     text-shadow: var(--shad);
+    color: var(--highlight-color);
+
 }
 @media (min-width:500px) {
     a #phone {
@@ -324,7 +326,9 @@ nav ul {
     display: block;
     padding: 10px;
     font-size: 25px;
-    color: rgb(81, 81, 81);
+    color: var(--highlight-color-minor);
+    background: var(--backgnd-gradient-color);
+
 }
 @media (max-width: 767px){
     #responsive_menu {
@@ -349,4 +353,13 @@ caption{
     font-size:1.4rem;
     border: 1px solid white;
     border-bottom: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
 }
