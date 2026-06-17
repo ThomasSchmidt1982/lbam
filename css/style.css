@@ -4,16 +4,19 @@
     padding: 0;
 
     --epaisseur-nav: 100px;
-    --backgnd-page-color: linear-gradient(45deg, #FFB140, #FFB140);
-    --backgnd-bandeau-color: linear-gradient(45deg, #FF6F59, #FF6F49);
+    --backgnd-gradient-color:  linear-gradient(45deg, #4a2e1f, #754B35);
+    --backgnd-page-color: #CFA692;
+    --highlight-color: #FDC05D;
+    --highlight-color-minor: #F5E9D8 ;
     --text-shad-black-on-white: 1px 1px 3px rgba(94, 94, 94, 0.46);
+    --shad: 2px 2px 3px #222020;
     --font-bandeau-color : #FFFFFF;
 
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--highlight-color-minor);
 }
 
 a:hover {
@@ -52,7 +55,7 @@ nav {
     grid-template-columns: 15vw 70vw 15vw;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color: white;
+    background: var(--backgnd-gradient-color);
 }
 @media (min-width:768px){
     nav {
@@ -80,13 +83,13 @@ nav {
 }
 #entreprise a {
     font-family: "Style Script", cursive;
-    color: #912F40;
+    color: var(--highlight-color);
     font-weight: 800;
     word-spacing: 0.5rem;
     font-style: normal;
     letter-spacing: .1rem;
     text-align: center;
-    text-shadow: 1px 1px 3px rgba(145, 47, 64, 0.46);
+    text-shadow: var(--shad);
     font-size: 30px;
     text-overflow-ellipsis: 5;
 }
@@ -97,11 +100,11 @@ nav {
 }
 #entreprise h2 {
     font-family: "Style Script", cursive;
-    color: #5e5e5e;
+    color: var(--highlight-color-minor);
     font-weight: 100;
     word-spacing: .5rem;
     letter-spacing: .1rem;
-    text-shadow: 1px 1px 3px rgba(94, 94, 94, 0.46);
+    text-shadow: var(--shad);
     font-size: 20px;
     text-align: center;
     margin: -15px;
@@ -150,7 +153,7 @@ footer {
     grid-row-start: 3;
     grid-row-end: 4;
     object-fit: contain;
-    background-color: white;
+    background: var(--backgnd-gradient-color);
 }
 @media (min-width: 500px) {
     footer {
@@ -162,6 +165,7 @@ footer {
     height: 40px;
     width: auto;
     font-size: 1.5rem;
+    color: var(--highlight-color-minor);
 }
 footer #facebook{
     grid-column-start: 5;
@@ -194,7 +198,7 @@ footer #facebook{
     max-width: 100%;
     grid-row-start: 2;
     grid-row-end: 3;
-    background: var(--backgnd-bandeau-color);
+    background: var(--highlight-color);
     color: var(--font-bandeau-color);
 
 }
@@ -207,7 +211,7 @@ footer #facebook{
 a:has(#phone) {
     justify-self: start;
     font-size: 25px;
-    text-shadow: var(--text-shad-black-on-white);
+    text-shadow: var(--shad);
 }
 @media (min-width:500px) {
     a #phone {
@@ -227,22 +231,22 @@ a:has(#phone) {
     --epaisseur-trait:3px;
     width: var(--longueur-trait);
     height: var(--epaisseur-trait);
-    background: black;
+    background: var(--highlight-color-minor);
     display: inline-block;
     position: relative;
-    box-shadow: 2px 2px 5px #d6d6d6;
+    box-shadow: var(--shad);
 }
 #burger::before,
 #burger::after {
     content:'';
     width: var(--longueur-trait);
     height: var(--epaisseur-trait);
-    background: black;
+    background: var(--highlight-color-minor);
     display: inline-block;
     position: absolute;
     transform-origin: center;
     transition: all 0.5s ease;
-    box-shadow: 2px 2px 5px #d6d6d6;
+    box-shadow: var(--shad);
 
 }
 #burger::before {
