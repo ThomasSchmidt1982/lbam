@@ -10,7 +10,7 @@ main h1 {
     padding: 20px;
     max-width: 100%;
     text-align: center;
-    color: white;
+    color: var(--highlight-color);
     font-family: 'Inria', serif;
     font-weight: 250;
     font-size: 2em;
@@ -18,10 +18,11 @@ main h1 {
 }
 
 main h2 {
+
     margin-top: 15px;
     color: white;
 }
 
 .bandeau {
-    background: var(--backgnd-bandeau-color);
+    background: var(--backgnd-gradient-color);
 }

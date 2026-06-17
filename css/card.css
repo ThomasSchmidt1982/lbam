@@ -27,10 +27,10 @@ main #patisseries-list > div {
     padding:20px;
     margin-top: 20px;
     border-radius:  5px;
-    background-color: white;
+    background: var(--highlight-color-minor);
     opacity: 100%;
     width: 90%;
-    box-shadow: 2px 2px 5px #733d32;
+    box-shadow: var(--shad);
     align-items: center;
 }
 @media (max-width: 799px){
@@ -54,10 +54,10 @@ main #patisseries-list > div {
 
 
 .card h2 {
-    color: black;
+    color: var(--brown-color);
     text-align: center;
     font-family: "Inria", serif;
-    font-weight: 100;
+    font-weight: 600;
     padding: 5px;
     font-size:1.5em;
 }
@@ -75,11 +75,12 @@ main #patisseries-list > div {
     overflow: hidden;
     text-overflow: ellipsis;
     min-height: 3em;
+    font-weight: 500;
 }
 
 .card .seasonal {
     font-style: italic;
-    font-weight:200;
+    font-weight:400;
     font-size: 1.2rem;
     color: green;
 }
