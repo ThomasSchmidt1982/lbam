@@ -132,7 +132,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         });
 
-    var map = L.map('map', { scrollWheelZoom: false }).setView([46.393172, -0.854539], 10);
+
+    if (typeof L === 'undefined') return;
+
+    const map = L.map('map', { scrollWheelZoom: false }).setView([46.393172, -0.854539], 10);
     map.once('focus', function () { map.scrollWheelZoom.disable(); });
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
